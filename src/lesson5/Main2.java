@@ -17,6 +17,7 @@ public class Main2 {
 
 //        System.out.println("Вносим изменения.");
         System.out.println("Склонированный репозиторий");
+        System.out.println("Домашнее задание.");
 
     }
 
