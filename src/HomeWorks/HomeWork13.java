@@ -19,6 +19,6 @@ public class HomeWork13 {
                 count++;
             }
         }
-        return count + negative(array);
+        return 0;
     }
 }

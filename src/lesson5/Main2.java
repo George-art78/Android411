@@ -13,7 +13,9 @@ public class Main2 {
 //        int[] mas = {1, 3, 5, 7, 9};
 //        System.out.println(sumList(0, mas));
 
-        System.out.println(toStr(18, 16));
+//        System.out.println(toStr(18, 16));
+
+        System.out.println("Вносим изменения");
 
     }
 
