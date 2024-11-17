@@ -15,7 +15,8 @@ public class Main2 {
 
 //        System.out.println(toStr(18, 16));
 
-        System.out.println("Вносим изменения.");
+//        System.out.println("Вносим изменения.");
+        System.out.println("Склонированный репозиторий");
 
     }
 
