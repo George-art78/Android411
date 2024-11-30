@@ -208,12 +208,76 @@ public class Main3 {
 //        s = String.valueOf(d); // метом преобразования чего-либо в строку
 //        System.out.println(s);
 
-        String str = "1";
-        System.out.println("1 > 5 : " + str.compareTo("5")); // метод сравнения: если false, то результат будет с минусом
-        System.out.println("1 == 1 : " + str.compareTo("1")); // если равны, то возвращает 0
-        str = "7";
-        System.out.println("7 > 5 : " + str.compareTo("5")); // если true, то результат будет с +
+//        String str = "1";
+//        System.out.println("1 > 5 : " + str.compareTo("5")); // метод сравнения: если false, то результат будет с минусом
+//        System.out.println("1 == 1 : " + str.compareTo("1")); // если равны, то возвращает 0
+//        str = "7";
+//        System.out.println("7 > 5 : " + str.compareTo("5")); // если true, то результат будет с +
 
+//        StringBuilder sb = new StringBuilder();
+//        System.out.println(sb.capacity());
+//        System.out.println(sb.length());
+//        System.out.println(sb + "\n");
+//
+//        StringBuilder sb1 = new StringBuilder(1000);
+//        System.out.println(sb1.capacity());
+//        System.out.println(sb1.length());
+//        System.out.println(sb1 + "\n");
+//
+//        StringBuilder sb2 = new StringBuilder("Java");
+//        System.out.println(sb2.capacity());
+//        System.out.println(sb2.length());
+//        System.out.println(sb2 + "\n");
+
+//        StringBuilder sb = new StringBuilder();
+//        sb.append('a'); // метод, который добавляет в конец строки значение из скобок (любой тип данных преобразуется в строку и добавляется в конец строки
+//        sb.append(true);
+//        sb.append(10);
+        //        sb.insert(5, "!"); // добавление чего либо в позицию: индекс, символ/строка/число
+//        sb.delete(5, 7); // удаление элементов [x, y)
+//        sb.deleteCharAt(5); // удаление конкретного элемента по индексу
+//        sb.replace(5, 10, "Java"); // указать интервал удаления символов и что ВМЕСТО НИХ нужно указать
+//        sb.append("Hello")
+//                .append(" ") // можно указывать использование метода с новой строки или в одну строку
+//                .append("World");
+//
+//        System.out.println(sb);
+////        sb.reverse(); // метод разворота строки
+////        System.out.println(sb);
+//
+//        System.out.println(sb.indexOf("l"));
+
+
+//        String st = sb.substring(6, 7);
+//
+//        System.out.println(st);
+
+        StringBuilder sb1 = createStr(5, 3);
+        System.out.println(sb1);
+        modifyStr(sb1, "=", "равно");
+        modifyStr(sb1, "+", "плюс");
+        modifyStr(sb1, "-", "минус");
+        modifyStr(sb1, "*", "умножить");
+        System.out.println(sb1);
+
+    }
+
+    public static StringBuilder createStr(int a, int b) {
+        StringBuilder res = new StringBuilder();
+        res.append(a).append(" + ").append(b).append(" = ").append(a + b).append("\n");
+        res.append(a).append(" - ").append(b).append(" = ").append(a - b).append("\n");
+        res.append(a).append(" * ").append(b).append(" = ").append(a * b).append("\n");
+        return res;
+    }
+
+    public static StringBuilder modifyStr(StringBuilder stBuild, String oldStr, String newStr) {
+        int pos;
+        while ((pos = stBuild.indexOf(oldStr)) != -1) {
+//            stBuild.deleteCharAt(pos);
+//            stBuild.insert(pos, "равно");
+            stBuild.replace(pos, pos + 1, newStr);
+        }
+        return stBuild;
     }
 }
 
