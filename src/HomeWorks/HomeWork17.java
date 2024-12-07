@@ -16,6 +16,7 @@ public class HomeWork17 {
             System.out.println("Изменённая строка - \"" + modifyStr(builder, " ", "") + "\"");
         }
     }
+
     public static StringBuilder modifyStr(StringBuilder stBuild, String oldStr, String newStr) {
         int pos;
         while ((pos = stBuild.indexOf(oldStr)) != -1) {
@@ -23,4 +24,5 @@ public class HomeWork17 {
         }
         return stBuild;
     }
+    
 }
