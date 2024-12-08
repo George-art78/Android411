@@ -7,7 +7,7 @@ public class HomeWork18and19 {
     public static void main(String[] args) {
         String s = "123456@i.ru, 123_456@ru.name.ru, login@i.ru, логин-1@i.ru, login.3@i.ru, login.3-67@i.ru, 1login@ru.name.ru";
 
-        String pattern = "@\\w+[.]\\w+[.]?\\w+";
+        String pattern = "\\w+\\-*[.]*[\\d+]*[А-я]*[^,]*@\\w+[.]\\w+[.]?\\w+";
         Pattern regex = Pattern.compile(pattern);
         Matcher matcher = regex.matcher(s);
 
