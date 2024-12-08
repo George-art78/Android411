@@ -24,5 +24,5 @@ public class HomeWork17 {
         }
         return stBuild;
     }
-    
+
 }
