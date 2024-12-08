@@ -17,7 +17,7 @@ public class MainNew {
 //        String pattern = "Ели\\[-ели\\].\\Z"; // поиск с конца строки
 //        String pattern = "\\Bсовпадения"; // поиск с привязкой к началу символа
 //        String pattern = "\\w+"; // поиск нескольких символов ПОДРЯД производится через "+": ОТ одного символа
-        String pattern = "20*"; // поиск нескольких символов ПОДРЯД производится через "+": ОТ одного символа
+        String pattern = "20*";
         Pattern regex = Pattern.compile(pattern);
         Matcher matcher = regex.matcher(s);
 

@@ -5,9 +5,9 @@ import java.util.regex.Pattern;
 
 public class HomeWork18and19 {
     public static void main(String[] args) {
-        String s = "Java_master!@#";
+        String s = "123456@i.ru, 123_456@ru.name.ru, login@i.ru, логин-1@i.ru, login.3@i.ru, login.3-67@i.ru, 1login@ru.name.ru";
 
-        String pattern = "^[\\w-]{3,16}$";
+        String pattern = "@\\w+[.]\\w+[.]?\\w+";
         Pattern regex = Pattern.compile(pattern);
         Matcher matcher = regex.matcher(s);
 
