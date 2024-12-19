@@ -7,5 +7,8 @@ public class Main {
 
         Student student = new Student("Загидуллин", "Линар", 32, "Математика", "MM_220", 90, 95);
         System.out.println(student);
+
+        Teacher teacher = new Teacher("Максимов", "Михаил", 35, "Астрономия", 97);
+        System.out.println(teacher);
     }
 }
