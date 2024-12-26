@@ -10,5 +10,16 @@ public class Main {
 
         Teacher teacher = new Teacher("Максимов", "Михаил", 35, "Астрономия", 97);
         System.out.println(teacher);
+
+        Graduate graduate = new Graduate("Нугани", "Сергей", 25, "Сети", "DS_11", 80, 20, "Защита персональных данных");
+        System.out.println(graduate);
+
+        Student student1 = new Student(human, "Физика", "Ф-23", 0, 0);
+
+        Graduate graduate1 = new Graduate(student, "Математические вычисления");
+        System.out.println(graduate1);
+
+        Specialist specialist = new Specialist(graduate, 5);
+        System.out.println(specialist);
     }
 }

@@ -19,6 +19,23 @@ public class Student extends Human{
         System.out.println("StudentConstructor:\t" + Integer.toHexString(hashCode()));
     }
 
+    public Student(Human human, String speciality, String group, double rating, double attendance){
+        super(human);
+        setSpeciality(speciality);
+        setGroup(group);
+        setRating(rating);
+        setAttendance(attendance);
+        System.out.println("StudentConstructor:\t" + Integer.toHexString(hashCode()));
+    }
+
+    public Student(Student other) {
+        super(other);
+        this.speciality = other.speciality;
+        this.group = other.group;
+        this.rating = other.rating;
+        this.attendance = other.attendance;
+    }
+
     public String getSpeciality() {
         return speciality;
     }
