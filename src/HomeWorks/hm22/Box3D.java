@@ -23,4 +23,5 @@ public class Box3D extends Box{
                 ", глубина = " + deep +
                 '}';
     }
+
 }

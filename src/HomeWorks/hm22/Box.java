@@ -33,4 +33,5 @@ public class Box {
                 "ширина = " + width +
                 ", высота = " + height;
     }
+
 }
