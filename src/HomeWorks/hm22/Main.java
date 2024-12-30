@@ -18,5 +18,5 @@ public class Main {
         System.out.println(box);
         System.out.println("Объём: " + (box.getDeep() * box.getWidth() * box.getHeight()));
     }
-    
+
 }
