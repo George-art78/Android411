@@ -10,6 +10,6 @@ public class Pyramid extends Figure3d{ // за основу взят конус 
 
     @Override
     public void calcVolume() {
-        System.out.printf("Фигура: пирамида | Объём фигуры: %.2f", ((Math.PI * getRadius() * getRadius() * height)/ 3));
+        System.out.printf("Фигура: пирамида | Объём фигуры: %.2f%n", ((Math.PI * getRadius() * getRadius() * height)/ 3));
     }
 }

@@ -12,4 +12,5 @@ public class Cylinder extends Figure3d{
     public void calcVolume() {
         System.out.printf("Фигура: цилиндр  | Объём фигуры: %.2f%n", (Math.PI * getRadius() * getRadius() * height));
     }
+
 }
