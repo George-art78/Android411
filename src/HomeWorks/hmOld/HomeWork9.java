@@ -1,5 +1,4 @@
-package HomeWorks;
-import java.util.Arrays;
+package HomeWorks.hmOld;
 
 public class HomeWork9 {
     public static void main(String[] args) {

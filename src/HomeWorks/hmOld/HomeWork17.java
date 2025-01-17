@@ -1,4 +1,4 @@
-package HomeWorks;
+package HomeWorks.hmOld;
 
 
 public class HomeWork17 {
