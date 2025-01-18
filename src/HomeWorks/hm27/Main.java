@@ -18,6 +18,7 @@ public class Main {
         System.out.print("Введите количество элементов массива строк: ");
         int countString = input.nextInt();
         String[] arrString = new String[countString];
+        input.nextLine();
 
         for (int i = 0; i < countString; i++) {
             System.out.print("-> ");
