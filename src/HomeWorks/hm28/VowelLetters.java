@@ -18,19 +18,20 @@ public class VowelLetters {
 
     }
 
-    public static void voLetters(String s) throws HaveNotVowelLettersException{
-        String vowelLetters = "eyuioaуеаоэяию";
+    public static void voLetters(String s) throws HaveNotVowelLettersException {
+        char[] vowelLetters = {'e','y','u','i','o','a','у','е','а','о','э','я','и','ю'};
+        boolean check = false;
         for (int i = 0; i < s.length(); i++) {
-            for (int j = 0; j < vowelLetters.length(); j++) {
+            for (int j = 0; j < vowelLetters.length; j++) {
                 char sChar = s.charAt(i);
-                char voChar = vowelLetters.charAt(j);
-                if (sChar == voChar) {
+                if (sChar == vowelLetters[j]) {
                     System.out.println("Строка содержит гласные буквы.");
+                    check = true;
                     break;
-                } else {
-                    throw new HaveNotVowelLettersException("Ошибка: Строка не содержит гласные буквы.");
                 }
             }
+            if (check == true)
+                break;
         }
     }
 }
