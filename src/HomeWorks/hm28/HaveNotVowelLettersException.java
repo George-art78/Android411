@@ -5,3 +5,4 @@ public class HaveNotVowelLettersException extends Exception{
         super(message);
     }
 }
+
