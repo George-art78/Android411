@@ -97,3 +97,4 @@ class Film implements Serializable {
                 ", длительность: " + duration + " минут";
     }
 }
+
