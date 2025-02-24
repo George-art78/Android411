@@ -27,6 +27,22 @@ public class Controller {
         } else if (choice.equals("2")) {
             Collection films = filmModel.getAllFilms();
             userInterface.showAllFilms(films);
+        } else if (choice.equals("3")) {
+            String filmTitle = userInterface.getUserFilmTitle();
+            try {
+                Map film = filmModel.getUserFilm(filmTitle);
+                userInterface.showFilm(film);
+            } catch (NullPointerException npe) {
+                userInterface.showIncorrectFilmNameError(filmTitle);
+            }
+        } else if (choice.equals("4")) {
+            String filmTitle = userInterface.getUserFilmTitle();
+            Film film = filmModel.removeUserNameFilm(filmTitle);
+            userInterface.removeUserNameFilm(film);
+        } else if (choice.equals("q")) {
+            filmModel.saveFilm();
+        } else {
+            userInterface.showIncorrectChoiceError(choice);
         }
     }
 }
